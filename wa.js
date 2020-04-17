@@ -10,5 +10,5 @@ function loadWasm(filename)
 
 loadWasm('test.wasm')
 .then(instance => {
-    add = instance.export._Z3addii;
+    add = instance.exports._Z3addii;
 })
